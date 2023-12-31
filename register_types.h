@@ -21,5 +21,5 @@
 
 #include "modules/register_module_types.h"
 
-void initialize_luascript_module(ModuleInitializationLevel p_level);
-void uninitialize_luascript_module(ModuleInitializationLevel p_level);
+void initialize_solar2d_module(ModuleInitializationLevel p_level);
+void uninitialize_solar2d_module(ModuleInitializationLevel p_level);

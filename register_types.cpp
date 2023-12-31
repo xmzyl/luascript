@@ -43,7 +43,7 @@ LuaScriptLanguage *script_language{ nullptr };
 Ref<LuaScriptResourceFormatLoader> resource_format_loader{};
 Ref<LuaScriptResourceFormatSaver> resource_format_saver{};
 
-void initialize_luascript_module(ModuleInitializationLevel p_level) {
+void initialize_solar2d_module(ModuleInitializationLevel p_level) {
 	print_debug("register_types.initialize_luascript_module( p_level = %d )", static_cast<int>(p_level));
 
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
@@ -66,7 +66,7 @@ void initialize_luascript_module(ModuleInitializationLevel p_level) {
 #endif
 }
 
-void uninitialize_luascript_module(ModuleInitializationLevel p_level) {
+void uninitialize_solar2d_module(ModuleInitializationLevel p_level) {
 	print_debug("register_types.uninitialize_luascript_module( p_level = %d )", static_cast<int>(p_level));
 
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
